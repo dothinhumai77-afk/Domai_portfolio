@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đỗ Thị Như Mai — Portfolio CX &amp; CRM · Easy Edit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+/* =========================================================
+ ✏️ EDIT HERE — COLORS
+ Đổi các HEX bên dưới để tạo theme mới.
+ ========================================================= */
+:root{
+  --edit-cream:#FFF9F3;
+  --edit-coral:#E85D5A;
+  --edit-blue:#4E8EDC;
+  --edit-lime:#8FAF62;
+  --edit-yellow:#F5C85B;
+  --edit-lilac:#9A83C7;
+  --edit-ink:#2D2523;
+  --edit-muted:#756864;
+}
+
+
+:root{
+  --bg:#FFF9F2;
+  --paper:#FFFFFF;
+  --ink:#1D2030;
+  --muted:#667085;
+  --coral:#FF6B5F;
+  --coral-dark:#D94C4A;
+  --blue:#4D7CFE;
+  --blue-dark:#3159D6;
+  --lime:#A8D94B;
+  --yellow:#FFD85A;
+  --lilac:#B89BFF;
+  --mint:#8ED8C5;
+  --line:#E9E5DE;
+  --shadow:0 16px 45px rgba(42,37,31,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 8% 8%, rgba(255,216,90,.20), transparent 22rem),
+    radial-gradient(circle at 95% 18%, rgba(184,155,255,.17), transparent 24rem),
+    var(--bg);
+  color:var(--ink);
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-weight:400;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  width:220px;height:220px;
+  right:-110px;bottom:8%;
+  border:28px solid rgba(142,216,197,.22);
+  border-radius:50%;
+  pointer-events:none;
+  z-index:-1;
+}
+h1,h2,h3,.serif{font-family:'Lora',serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 34px}
+.narrow{max-width:780px;margin:0 auto;padding:0 34px}
+
+/* decorative background */
+.hero,.summary,section.case,.lifecycle,.capability,.closing{position:relative}
+.hero::before,.hero::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+}
+.hero::before{
+  width:150px;height:150px;
+  left:-45px;top:85px;
+  background:var(--yellow);
+  border-radius:42% 58% 65% 35% / 45% 38% 62% 55%;
+  transform:rotate(-18deg);
+  opacity:.65;
+}
+.hero::after{
+  width:120px;height:120px;
+  right:-25px;top:120px;
+  background:var(--mint);
+  border-radius:55% 45% 30% 70%;
+  transform:rotate(25deg);
+  opacity:.55;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  padding:76px 0 58px;
+  overflow:hidden;
+}
+.hero .wrap{position:relative;z-index:1}
+.petal-divider{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  margin:0 0 18px;
+}
+.petal-divider .line{width:70px;height:3px;background:var(--ink);border-radius:99px}
+.petal-divider .dot{
+  width:10px;height:10px;border-radius:50%;background:var(--coral);
+  box-shadow:12px -6px 0 -3px var(--blue),-12px 7px 0 -4px var(--yellow);
+}
+.hero .kicker{
+  display:inline-block;
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-style:normal;
+  color:var(--ink);
+  font-size:.78rem;
+  font-weight:700;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.hero h1{
+  font-size:clamp(3rem,7vw,5.8rem);
+  line-height:.98;
+  font-weight:600;
+  letter-spacing:-.055em;
+  margin:0 auto 18px;
+  color:var(--ink);
+  max-width:900px;
+}
+.hero h1::after{
+  content:"";
+  display:block;
+  width:180px;height:12px;
+  background:var(--coral);
+  border-radius:50%;
+  transform:rotate(-2deg);
+  margin:13px auto 0;
+  opacity:.75;
+}
+.hero .role{
+  display:inline-block;
+  font-size:1rem;
+  color:var(--paper);
+  background:var(--blue);
+  border-radius:999px;
+  padding:9px 20px;
+  margin:6px 0 25px;
+  font-weight:700;
+  box-shadow:5px 5px 0 var(--yellow);
+}
+.hero .contact{
+  font-size:.86rem;
+  color:var(--muted);
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.hero .contact span{
+  position:relative;
+  padding:9px 14px 9px 34px;
+  background:rgba(255,255,255,.75);
+  border:1px solid var(--line);
+  border-radius:999px;
+  box-shadow:0 5px 18px rgba(42,37,31,.04);
+}
+.hero .contact span::before{
+  position:absolute;left:13px;top:50%;transform:translateY(-50%);
+  font-weight:700;color:var(--coral);
+}
+.hero .contact span:nth-child(1)::before{content:"⌖"}
+.hero .contact span:nth-child(2)::before{content:"✉"}
+.hero .contact span:nth-child(3)::before{content:"●"}
+.hero .contact span:nth-child(4)::before{content:"in";font-size:.7rem;border:1px solid currentColor;padding:0 2px;border-radius:3px}
+.hero .contact span:not(:last-child)::after{display:none}
+
+/* ---------- SUMMARY ---------- */
+.summary{padding:30px 0 82px}
+.summary p{
+  font-size:1.08rem;
+  color:var(--ink);
+  text-align:left;
+  max-width:760px;
+  margin:0 auto;
+  padding:26px 30px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:24px;
+  box-shadow:var(--shadow);
+}
+.summary p::first-line{font-weight:500}
+.pillars{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:22px;
+}
+.pillar{
+  position:relative;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:26px 24px 25px;
+  min-height:185px;
+  box-shadow:0 10px 28px rgba(42,37,31,.05);
+  overflow:hidden;
+}
+.pillar::after{
+  content:"";
+  position:absolute;
+  width:100px;height:100px;
+  right:-35px;bottom:-40px;
+  border-radius:50%;
+  background:var(--yellow);
+  opacity:.35;
+}
+.pillar:nth-child(2)::after{background:var(--mint)}
+.pillar:nth-child(3)::after{background:var(--lilac)}
+.pillar .num{
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-style:normal;
+  color:var(--ink);
+  font-size:.72rem;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:30px;height:30px;
+  border-radius:10px;
+  background:var(--yellow);
+  margin-bottom:17px;
+}
+.pillar:nth-child(2) .num{background:var(--mint)}
+.pillar:nth-child(3) .num{background:var(--lilac)}
+.pillar h3{font-size:1.15rem;font-weight:600;margin:0 0 8px;position:relative;z-index:1}
+.pillar p{font-size:.9rem;color:var(--muted);text-align:left;margin:0;padding:0;background:none;border:0;box-shadow:none;position:relative;z-index:1}
+
+/* ---------- CASES ---------- */
+section.case{
+  padding:76px 0;
+  background:transparent;
+}
+section.case:nth-of-type(2n){background:#F5F7FF}
+section.case + section.case{border-top:0}
+.case .wrap{position:relative}
+.case-head{
+  margin-bottom:28px;
+  position:relative;
+  padding-left:78px;
+}
+.case-head::before{
+  content:"";
+  position:absolute;
+  left:0;top:0;
+  width:56px;height:56px;
+  border-radius:18px;
+  background:var(--coral);
+  box-shadow:7px 7px 0 var(--yellow);
+}
+section.case:nth-of-type(2n) .case-head::before{background:var(--blue);box-shadow:7px 7px 0 var(--mint)}
+.case-head::after{
+  content:"↗";
+  position:absolute;
+  left:16px;top:9px;
+  font-size:25px;font-weight:800;color:#fff;
+}
+.case-head .eyebrow{
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-style:normal;
+  color:var(--coral-dark);
+  font-size:.76rem;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin-bottom:7px;
+}
+.case-head h2{font-size:clamp(1.7rem,3vw,2.45rem);line-height:1.16;font-weight:600;letter-spacing:-.025em;margin:0 0 9px}
+.case-head .meta{color:var(--muted);font-size:.9rem}
+
+/* stat cards */
+.stat-row{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:12px;
+  margin:25px 0 30px;
+  padding:0;
+  border:0;
+}
+.stat{
+  min-width:0;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:20px 18px;
+  box-shadow:0 8px 22px rgba(42,37,31,.05);
+}
+.stat .n{
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-size:2rem;
+  font-weight:800;
+  letter-spacing:-.04em;
+  color:var(--coral-dark);
+  display:block;
+  line-height:1.05;
+}
+.stat:nth-child(2) .n{color:var(--blue-dark)}
+.stat:nth-child(3) .n{color:#739A20}
+.stat:nth-child(4) .n{color:#8B67D9}
+.stat .l{font-size:.8rem;color:var(--muted);margin-top:8px;display:block;line-height:1.45}
+
+/* body */
+.body-text{max-width:900px}
+.body-text p{font-size:.97rem;color:#454B5A}
+.body-text ul{padding-left:0;margin:15px 0;list-style:none}
+.body-text li{
+  position:relative;
+  font-size:.92rem;color:#596171;margin-bottom:10px;padding-left:28px;
+}
+.body-text li::before{
+  content:"✓";
+  position:absolute;left:0;top:1px;
+  width:19px;height:19px;
+  border-radius:6px;
+  background:var(--yellow);
+  color:var(--ink);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;font-weight:800;
+}
+
+/* flow */
+.flow{
+  display:grid;
+  grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr;
+  gap:8px;
+  align-items:center;
+  margin:25px 0 22px;
+}
+.flow .step{
+  height:100%;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 8px 24px rgba(42,37,31,.05);
+}
+.flow .step .lab{
+  display:inline-flex;
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-style:normal;
+  color:var(--ink);
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  margin-bottom:10px;
+  background:var(--yellow);
+  border-radius:999px;
+  padding:5px 9px;
+}
+.flow .step:nth-of-type(3) .lab{background:var(--mint)}
+.flow .step:nth-of-type(5) .lab{background:var(--lilac)}
+.flow .step:nth-of-type(7) .lab{background:#FFD0CB}
+.flow .step p{margin:0;font-size:.83rem;color:var(--muted);line-height:1.6}
+.flow .arrow{align-self:center;color:var(--coral);font-size:1.35rem;font-weight:800;text-align:center}
+
+/* insight */
+.insight-box{
+  margin-top:28px;
+  background:var(--ink);
+  color:#fff;
+  border:0;
+  border-radius:22px;
+  padding:22px 26px 24px 70px;
+  position:relative;
+  box-shadow:9px 9px 0 var(--coral);
+}
+.insight-box::before{
+  content:"✦";
+  position:absolute;left:25px;top:23px;
+  width:31px;height:31px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--yellow);color:var(--ink);
+  border-radius:10px;font-weight:900;
+}
+.insight-box .lab{
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-style:normal;color:var(--yellow);font-size:.72rem;
+  font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  display:block;margin-bottom:8px;
+}
+.insight-box p{margin:0;font-size:.92rem;color:#F7F7F8}
+
+/* chart */
+.chart{margin:30px 0 8px;background:rgba(255,255,255,.62);border:1px solid var(--line);border-radius:22px;padding:24px}
+.chart .group-title{font-size:.9rem;color:var(--ink);font-weight:800;margin:0 0 13px}
+.bar-row{display:flex;align-items:center;gap:12px;margin-bottom:11px}
+.bar-row .b-label{width:190px;font-size:.78rem;color:var(--muted);flex-shrink:0}
+.bar-track{flex:1;background:#EDEFF4;border-radius:99px;height:12px;overflow:hidden}
+.bar-fill{height:100%;border-radius:99px}
+.bar-fill.rose{background:linear-gradient(90deg,var(--coral),#FF9B84)}
+.bar-fill.sage{background:linear-gradient(90deg,var(--lime),#7FBE56)}
+.bar-row .b-val{width:52px;text-align:right;font-size:.8rem;color:var(--ink);font-weight:800}
+.chart-note{font-size:.78rem;color:var(--muted);margin-top:15px;font-style:italic}
+
+/* tables */
+.seg-table{
+  width:100%;border-collapse:separate;border-spacing:0;
+  margin:26px 0;font-size:.84rem;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 8px 22px rgba(42,37,31,.04);
+}
+.seg-table th{
+  font-family:'Be Vietnam Pro',sans-serif;font-weight:800;font-style:normal;
+  color:var(--ink);text-align:left;padding:13px 14px;
+  background:#FFF1D4;border-bottom:1px solid var(--line);
+}
+.seg-table td{padding:14px;border-bottom:1px solid var(--line);color:var(--muted);vertical-align:top}
+.seg-table tr:last-child td{border-bottom:0}
+.seg-table td.group{color:var(--ink);font-weight:800}
+.learn{
+  margin-top:24px;padding:20px 22px;
+  border-radius:18px;background:#EAF8F3;
+  border:1px dashed #9BCDBF;
+}
+.learn .lab{
+  font-family:'Be Vietnam Pro',sans-serif;font-style:normal;color:#438675;
+  font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  display:block;margin-bottom:7px;
+}
+.learn p{margin:0;font-size:.9rem;color:#4D665F}
+
+/* ---------- EVIDENCE HUB (nav pill + dashboard/sample preview) ---------- */
+.evidence-block{margin:28px 0 30px}
+.evidence-nav{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.ev-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:'Be Vietnam Pro',sans-serif;font-weight:700;font-size:.84rem;
+  padding:12px 18px;border-radius:999px;text-decoration:none;
+  border:1px solid var(--line);cursor:pointer;
+  transition:transform .15s ease;
+}
+.ev-btn:hover{transform:translateY(-2px)}
+.ev-btn.ev-primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ev-btn.ev-primary .ev-icon{font-size:.9rem}
+.ev-btn.ev-tab{background:var(--paper);color:var(--ink);box-shadow:0 5px 15px rgba(42,37,31,.05)}
+.ev-btn.ev-tab.is-active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.evidence-panel{display:none}
+.evidence-panel.is-active{display:block}
+.dash-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:22px;
+  padding:26px 28px 22px;box-shadow:0 10px 28px rgba(42,37,31,.05);
+}
+.dash-card h4{margin:0 0 20px;font-size:1.02rem;font-weight:800;color:var(--ink)}
+.dash-row{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.dash-row .d-label{width:150px;flex-shrink:0;font-size:.86rem;color:var(--muted)}
+.dash-track{flex:1;height:9px;border-radius:99px;background:#EDEFF4;overflow:hidden}
+.dash-fill{height:100%;border-radius:99px}
+.dash-fill.green{background:linear-gradient(90deg,#8FC24E,#6FAE33)}
+.dash-fill.salmon{background:linear-gradient(90deg,#FF9B7A,#FF6B4F)}
+.dash-row .d-val{width:56px;text-align:right;font-size:.88rem;font-weight:800;color:var(--ink)}
+.dash-note{margin:14px 0 0;font-size:.8rem;font-style:italic;color:var(--muted)}
+.social-sample{
+  background:var(--paper);border:1px solid var(--line);border-radius:22px;
+  padding:26px 28px;box-shadow:0 10px 28px rgba(42,37,31,.05);
+}
+.social-sample p{margin:0 0 12px;font-size:.9rem;color:#454B5A}
+.social-sample .sample-img{
+  display:block;width:100%;max-width:520px;border-radius:14px;border:1px solid var(--line);
+}
+.social-sample .sample-note{font-size:.8rem;font-style:italic;color:var(--muted);margin-top:12px}
+@media(max-width:600px){
+  .ev-btn{font-size:.78rem;padding:10px 14px}
+  .dash-row{flex-wrap:wrap}
+  .dash-row .d-label{width:100%}
+  .dash-row .d-val{width:auto;margin-left:auto}
+}
+
+/* ---------- LIFECYCLE ---------- */
+.lifecycle{padding:82px 0;background:#1D2030}
+.lifecycle::before{
+  content:"CRM";
+  position:absolute;right:-35px;top:30px;
+  font-size:8rem;line-height:1;font-weight:900;
+  color:rgba(255,255,255,.035);
+  letter-spacing:-.08em;
+}
+.lifecycle .lc-title .eyebrow{color:var(--yellow)}
+.lifecycle .lc-title h2{color:#fff}
+.lifecycle .lc-title p{color:#BFC5D2}
+.lc-title{text-align:center;margin-bottom:12px}
+.lc-title .eyebrow{
+  font-family:'Be Vietnam Pro',sans-serif;font-style:normal;
+  font-size:.76rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+}
+.lc-title h2{font-size:2.1rem;font-weight:600;margin:8px 0 14px;text-align:center;letter-spacing:-.025em}
+.lc-title p{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 45px;font-size:.94rem}
+.lc-flow{
+  display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:5px;
+}
+.lc-node{
+  background:#292D3B;border:1px solid #3B4050;border-radius:16px;
+  padding:15px 16px;min-width:125px;text-align:center;margin:4px;
+}
+.lc-node .stage{font-weight:800;font-size:.82rem;color:#fff}
+.lc-node .tag{
+  display:block;margin-top:7px;font-size:.7rem;color:var(--yellow);
+  font-style:normal;font-family:'Be Vietnam Pro',sans-serif;font-weight:700;
+}
+.lc-arrow{align-self:center;color:var(--coral);font-size:1rem;font-weight:800}
+.lc-note{
+  max-width:820px;margin:40px auto 0;
+  background:#292D3B;border:1px solid #3B4050;border-radius:22px;padding:24px 28px;
+}
+.lc-note p{margin:0 0 10px;font-size:.88rem;color:#C9CED8}
+.lc-note p:last-child{margin-bottom:0}
+.lc-note b{color:#fff}
+
+/* ---------- CAPABILITY ---------- */
+.capability{padding:82px 0}
+.capability .lc-title{margin-bottom:0}
+.cap-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:38px;
+}
+.cap-card{
+  position:relative;
+  background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:25px 27px 24px;
+  box-shadow:0 10px 28px rgba(42,37,31,.05);
+  overflow:hidden;
+}
+.cap-card::before{
+  content:"";
+  position:absolute;right:-25px;top:-25px;
+  width:90px;height:90px;border-radius:50%;background:var(--yellow);opacity:.35;
+}
+.cap-card:nth-child(2)::before{background:var(--mint)}
+.cap-card:nth-child(3)::before{background:var(--lilac)}
+.cap-card:nth-child(4)::before{background:#FFD0CB}
+.cap-card h3{
+  position:relative;font-size:1.06rem;font-weight:800;margin:0 0 14px;color:var(--ink);
+  padding-left:42px;
+}
+.cap-card h3::before{
+  content:"✦";position:absolute;left:0;top:-2px;
+  width:29px;height:29px;border-radius:9px;
+  background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:.85rem;
+}
+.cap-card:nth-child(2) h3::before{content:"↻";background:var(--mint)}
+.cap-card:nth-child(3) h3::before{content:"↗";background:var(--lilac)}
+.cap-card:nth-child(4) h3::before{content:"◎";background:#FFD0CB}
+.cap-card ul{margin:0;padding-left:18px}
+.cap-card li{font-size:.86rem;color:var(--muted);margin-bottom:7px}
+.tools{margin-top:40px}
+.tools h3{font-size:1rem;font-weight:800;margin-bottom:14px}
+.tool-tags{display:flex;flex-wrap:wrap;gap:9px}
+.tool-tag{
+  background:var(--paper);border:1px solid var(--line);border-radius:999px;
+  padding:8px 14px;font-size:.8rem;color:var(--ink);
+  box-shadow:0 5px 15px rgba(42,37,31,.035);
+}
+.tool-tag.learning{border:1.5px dashed var(--coral);color:var(--coral-dark);background:#FFF3F0}
+
+/* ---------- CLOSING ---------- */
+.closing{
+  padding:92px 0 85px;
+  text-align:center;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,216,90,.65), transparent 12rem),
+    radial-gradient(circle at 88% 70%, rgba(184,155,255,.55), transparent 15rem),
+    #FFF0E8;
+}
+.closing .eyebrow{
+  font-family:'Be Vietnam Pro',sans-serif;font-style:normal;
+  color:var(--coral-dark);font-size:.76rem;font-weight:800;
+  letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px;
+}
+.closing h2{font-size:clamp(1.6rem,3vw,2.35rem);line-height:1.22;font-weight:600;max-width:780px;margin:0 auto 20px;letter-spacing:-.02em}
+.closing p{max-width:700px;margin:0 auto;color:#5C606A;font-size:.94rem}
+.closing .sign{
+  display:inline-block;margin-top:35px;
+  font-family:'Lora',serif;font-style:italic;font-size:1.25rem;color:var(--ink);
+  padding:8px 18px;
+  background:var(--yellow);
+  border-radius:50% 45% 52% 40%;
+  transform:rotate(-2deg);
+}
+footer{
+  text-align:center;padding:28px 30px 48px;color:var(--muted);font-size:.76rem;
+  background:#FFF0E8;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:900px){
+  .flow{grid-template-columns:1fr 24px 1fr}
+  .flow .arrow:nth-of-type(2){display:none}
+  .flow .step:nth-of-type(3){grid-column:3}
+  .flow .step:nth-of-type(5){grid-column:1}
+  .flow .arrow:nth-of-type(4){grid-column:2;grid-row:2}
+  .flow .step:nth-of-type(7){grid-column:3;grid-row:2}
+}
+@media(max-width:720px){
+  .wrap,.narrow{padding:0 20px}
+  .hero{padding:58px 0 44px}
+  .hero::before{left:-80px;top:60px}
+  .hero::after{right:-55px;top:95px}
+  .hero h1{font-size:3.15rem}
+  .hero .role{font-size:.84rem;padding:8px 14px}
+  .hero .contact{display:grid;grid-template-columns:1fr 1fr}
+  .hero .contact span{font-size:.72rem;padding:8px 8px 8px 29px}
+  .pillars,.cap-grid{grid-template-columns:1fr}
+  .summary{padding-bottom:58px}
+  section.case{padding:58px 0}
+  .case-head{padding-left:68px}
+  .case-head::before{width:49px;height:49px}
+  .case-head::after{left:14px;top:7px;font-size:21px}
+  .stat-row{grid-template-columns:1fr 1fr}
+  .stat{padding:17px 14px}
+  .stat .n{font-size:1.55rem}
+  .flow{display:flex;flex-direction:column;gap:6px}
+  .flow .step{width:100%}
+  .flow .arrow{transform:rotate(90deg);height:18px}
+  .chart{padding:18px 14px}
+  .bar-row{display:grid;grid-template-columns:1fr 55px;gap:4px 10px}
+  .bar-row .b-label{width:auto;grid-column:1/2}
+  .bar-track{grid-column:1/2}
+  .bar-row .b-val{grid-column:2;grid-row:1/3;align-self:center}
+  .seg-table{display:block;overflow-x:auto;white-space:normal}
+  .lc-flow{gap:2px}
+  .lc-node{min-width:110px}
+  .lifecycle{padding:64px 0}
+  .lc-title h2{font-size:1.7rem}
+}
+@media(max-width:430px){
+  .hero h1{font-size:2.75rem}
+  .hero .contact{grid-template-columns:1fr}
+  .stat-row{grid-template-columns:1fr}
+  .stat .n{font-size:1.8rem}
+}
+
+
+.skip-link{position:absolute;left:-9999px;top:auto}
+.skip-link:focus{left:15px;top:15px;background:#fff;padding:10px 14px;border-radius:10px;z-index:99}
+.top-chip{
+  position:fixed;right:18px;top:16px;z-index:20;
+  background:rgba(255,255,255,.86);backdrop-filter:blur(10px);
+  border:1px solid var(--line);border-radius:999px;
+  padding:7px 12px;font-size:.62rem;font-weight:800;letter-spacing:.08em;color:var(--muted);
+  box-shadow:0 6px 20px rgba(42,37,31,.07)
+}
+@media(max-width:720px){.top-chip{display:none}}
+
+
+/* ✏️ EASY EDIT helper */
+.edit-helper{
+  position:fixed;right:18px;bottom:18px;z-index:99;
+  background:#2D2523;color:#FFF9F3;padding:10px 14px;border-radius:999px;
+  font:600 12px/1.2 'Be Vietnam Pro',sans-serif;
+  box-shadow:0 8px 24px rgba(45,37,35,.18);
+}
+.edit-helper small{font-weight:400;opacity:.75}
+@media(max-width:720px){.edit-helper{right:10px;bottom:10px;font-size:11px}}
+
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+ ✏️ EASY EDIT GUIDE
+ Sửa nhanh bằng Ctrl + F:
+ PROFILE = tên / chức danh / contact
+ COLORS = màu sắc
+ CASE 01–04 = từng case study
+ SKILLS = năng lực & công cụ
+ CLOSING = định hướng cuối trang
+ Không cần sửa class/CSS nếu chỉ thay nội dung.
+ ========================================================= -->
+
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="top-chip">CX · CRM · CUSTOMER JOURNEY</div>
+  <main id="content">
+
+
+  <!-- ✏️ EDIT HERE — PROFILE -->
+<header class="hero">
+    <div class="wrap">
+      <div class="petal-divider"><span class="dot"></span><span class="line"></span><span class="dot"></span></div>
+      <div class="kicker">portfolio</div>
+      <h1>Đỗ Thị Như Mai</h1>
+      <div class="role">Trải nghiệm Khách hàng · CRM · Gắn kết Khách hàng</div>
+      <div class="contact">
+        <span>TP. Hồ Chí Minh</span>
+        <span>090x xxx xxx</span>
+        <span>email@example.com</span>
+        <span>linkedin.com/in/dothinhumai</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="summary">
+    <div class="narrow">
+      <p>Hơn 3 năm làm việc ở phần giao nhau giữa chăm sóc khách hàng, quản lý tài khoản và thương mại điện tử — nơi dữ liệu khách hàng không nằm trong một hệ thống CRM hoàn chỉnh, mà phải được nhặt ra từ phản hồi, khiếu nại, dữ liệu bán hàng và các cuộc hội thoại hằng ngày. Đang phát triển sâu hơn theo hướng CRM và vòng đời khách hàng dựa trên dữ liệu.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="num">01</span>
+          <h3>Customer Journey</h3>
+          <p>Phát hiện điểm nghẽn từ dữ liệu vận hành và phản hồi khách hàng thực tế.</p>
+        </div>
+        <div class="pillar">
+          <span class="num">02</span>
+          <h3>CRM &amp; Membership</h3>
+          <p>Thiết kế hoạt động thành viên dựa trên dữ liệu bán hàng, kể cả khi chưa có hệ thống hỗ trợ.</p>
+        </div>
+        <div class="pillar">
+          <span class="num">03</span>
+          <h3>Vận hành &amp; Con người</h3>
+          <p>Dẫn dắt đội ngũ, điều phối liên phòng ban, chuyển hóa dữ liệu thành báo cáo phục vụ ra quyết định.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✏️ EDIT HERE — CASE 01 -->
+<!-- CASE 01 — VICMIS -->
+  <section class="case">
+    <div class="wrap">
+      <div class="case-head">
+        <div class="eyebrow">dự án 01</div>
+        <h2>Quản lý tài khoản khách hàng &amp; dẫn dắt đội ngũ CSKH</h2>
+        <div class="meta">VICMIS · Account Executive &amp; Trưởng nhóm Chăm sóc Khách hàng · 2023–2026</div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat"><span class="n">4–6</span><span class="l">thành viên đội CSKH được dẫn dắt</span></div>
+        <div class="stat"><span class="n">120%</span><span class="l">KPI đạt được, 6 tháng liên tiếp</span></div>
+        <div class="stat"><span class="n">3 tháng</span><span class="l">liên tiếp giữ danh hiệu Renewal Champion</span></div>
+      </div>
+
+      <div class="body-text">
+        <p>Vai trò này nằm giữa quản lý tài khoản khách hàng và quản lý con người: vừa trực tiếp giữ quan hệ với khách hàng, vừa điều phối đội ngũ CSKH phía sau để đảm bảo trải nghiệm đó được duy trì nhất quán.</p>
+        <ul>
+          <li>Quản lý quan hệ và tài khoản khách hàng, phối hợp triển khai dịch vụ, xử lý vấn đề phát sinh và theo dõi sau hỗ trợ với nhiều bên liên quan.</li>
+          <li>Lập kế hoạch và điều phối các hoạt động marketing kỹ thuật số; theo dõi hiệu quả chiến dịch, chuyển hóa phản hồi của khách hàng thành các hạng mục hành động cụ thể.</li>
+          <li>Dẫn dắt đội Chăm sóc Khách hàng: phân bổ công việc, giám sát chất lượng, theo dõi hiệu suất và cải tiến dịch vụ.</li>
+          <li>Phân tích nhu cầu khách hàng và các vấn đề lặp lại để hỗ trợ duy trì khách hàng, gia hạn dịch vụ và nâng cao trải nghiệm tổng thể.</li>
+        </ul>
+      </div>
+
+      <!-- ✏️ EDIT HERE — EVIDENCE HUB (case 01)
+           1) "View Evidence Hub" — đổi href="#evidence-hub-link" thành link thật (Google Drive, Notion, v.v.)
+           2) 2 tab còn lại: đổi href="#" thành link thật nếu muốn mở trực tiếp ra trang khác,
+              hoặc để nguyên để tab chuyển nội dung ngay trong trang (mặc định đang set kiểu này).
+           3) Nếu muốn TẤT CẢ 3 mục đều mở sang site khác (không chuyển tab tại chỗ),
+              đổi cả 3 thẻ <a> bên dưới thành href="link-that" và bỏ target="_blank" nếu muốn mở cùng tab.
+      -->
+      <div class="evidence-block">
+        <div class="evidence-nav">
+          <a class="ev-btn ev-primary" href="#evidence-hub-link" target="_blank" rel="noopener">
+            <span class="ev-icon">↗</span> View Evidence Hub
+          </a>
+          <a class="ev-btn ev-tab is-active" href="#social-sample" data-tab="social" onclick="return evShowTab(this,'ev-tab-social')">
+            <span class="ev-icon">◎</span> Social / Account sample
+          </a>
+          <a class="ev-btn ev-tab" href="#dashboard-preview" data-tab="dashboard" onclick="return evShowTab(this,'ev-tab-dashboard')">
+            <span class="ev-icon">▦</span> Dashboard preview
+          </a>
+        </div>
+
+        <div class="evidence-panel is-active" id="ev-tab-social">
+          <div class="social-sample">
+            <p>Ảnh chụp mẫu (đã ẩn thông tin khách hàng) minh họa cách trao đổi &amp; quản lý tài khoản khách hàng trên kênh mạng xã hội / hệ thống nội bộ.</p>
+            <!-- ✏️ Thay ảnh mẫu tại đây: đổi src="#" thành đường dẫn ảnh thật -->
+            <img class="sample-img" src="#" alt="Social / Account sample screenshot">
+            <p class="sample-note">Đã che/ẩn thông tin cá nhân của khách hàng trước khi đưa vào portfolio.</p>
+          </div>
+        </div>
+
+        <div class="evidence-panel" id="ev-tab-dashboard">
+          <div class="dash-card">
+            <h4>Account Health Dashboard · sample</h4>
+            <div class="dash-row">
+              <span class="d-label">Renewal / retention</span>
+              <div class="dash-track"><div class="dash-fill green" style="width:82%"></div></div>
+              <span class="d-val">82%</span>
+            </div>
+            <div class="dash-row">
+              <span class="d-label">Active accounts</span>
+              <div class="dash-track"><div class="dash-fill salmon" style="width:76%"></div></div>
+              <span class="d-val">38/50</span>
+            </div>
+            <div class="dash-row">
+              <span class="d-label">Response SLA</span>
+              <div class="dash-track"><div class="dash-fill green" style="width:94%"></div></div>
+              <span class="d-val">94%</span>
+            </div>
+            <div class="dash-row">
+              <span class="d-label">Follow-up completion</span>
+              <div class="dash-track"><div class="dash-fill salmon" style="width:88%"></div></div>
+              <span class="d-val">88%</span>
+            </div>
+            <p class="dash-note">Sample dashboard created for portfolio illustration; figures are assumed and do not represent confidential VICMIS data.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-box">
+        <span class="lab">vì sao case này quan trọng</span>
+        <p>Đây là nơi tư duy CRM hình thành sớm nhất — trước khi có bất kỳ công cụ nào, việc giữ khách hàng gắn bó (thể hiện qua tỷ lệ gia hạn và KPI ổn định) đến từ việc hiểu đúng nhu cầu khách hàng và điều phối đúng người trong nội bộ.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✏️ EDIT HERE — CASE 02 -->
+<!-- CASE 02 — PHS -->
+  <section class="case band">
+    <div class="wrap">
+      <div class="case-head">
+        <div class="eyebrow">dự án 02</div>
+        <h2>Phân tích hành trình khách hàng &amp; hiệu quả Chatbot</h2>
+        <div class="meta">Phuong Nam Securities (PHS) · Customer Service &amp; CX · 2026</div>
+      </div>
+
+      <div class="flow">
+        <div class="step"><span class="lab">Vấn đề</span><p>Trung tâm CSKH cần biết chatbot đang hỗ trợ khách hàng hiệu quả tới đâu, và giai đoạn nào trong hành trình tự phục vụ còn khiến khách phải chuyển sang nhân viên CS.</p></div>
+        <div class="arrow">→</div>
+        <div class="step"><span class="lab">Phân tích</span><p>Rà soát 779 lượt tương tác khách hàng, trong đó 112 cuộc hội thoại qua chatbot. Phân loại từng lượt theo kết quả: Auto Success, Human Intervention, Drop-off, Trash, Cancel/Duplicate.</p></div>
+        <div class="arrow">→</div>
+        <div class="step"><span class="lab">Phát hiện</span><p>T5 và T6 là hai giai đoạn có mức độ tự động hóa yếu nhất trong hành trình khách hàng.</p></div>
+        <div class="arrow">→</div>
+        <div class="step"><span class="lab">Hành động</span><p>Chuyển dữ liệu vận hành thành phát hiện súc tích, làm cơ sở đề xuất cải thiện kịch bản chatbot ở các giai đoạn friction cao.</p></div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat"><span class="n">779</span><span class="l">lượt tương tác được rà soát</span></div>
+        <div class="stat"><span class="n">112</span><span class="l">cuộc hội thoại qua chatbot</span></div>
+        <div class="stat"><span class="n">T5–T6</span><span class="l">giai đoạn tự động hóa yếu nhất</span></div>
+      </div>
+
+      <div class="chart">
+        <div class="group-title">Tỷ lệ tự động hóa so với tỷ lệ cần CS can thiệp</div>
+
+        <div class="bar-row">
+          <div class="b-label">T5 — Tự động hóa</div>
+          <div class="bar-track"><div class="bar-fill rose" style="width:44.4%"></div></div>
+          <div class="b-val">44,4%</div>
+        </div>
+        <div class="bar-row">
+          <div class="b-label">T5 — Cần CS can thiệp</div>
+          <div class="bar-track"><div class="bar-fill sage" style="width:50.0%"></div></div>
+          <div class="b-val">50,0%</div>
+        </div>
+        <div class="bar-row">
+          <div class="b-label">T6 — Tự động hóa</div>
+          <div class="bar-track"><div class="bar-fill rose" style="width:27.3%"></div></div>
+          <div class="b-val">27,3%</div>
+        </div>
+        <div class="bar-row">
+          <div class="b-label">T6 — Cần CS can thiệp</div>
+          <div class="bar-track"><div class="bar-fill sage" style="width:54.5%"></div></div>
+          <div class="b-val">54,5%</div>
+        </div>
+        <div class="chart-note">Phần còn lại của mỗi tháng thuộc các nhóm Drop-off, Trash và Cancel/Duplicate.</div>
+      </div>
+
+      <div class="learn">
+        <span class="lab">bài học</span>
+        <p>Một chatbot "hoạt động" không đồng nghĩa với "hiệu quả" — chỉ khi tách được từng giai đoạn ra để đo riêng, mới nhìn thấy chatbot đang yếu ở đâu, thay vì chỉ nhìn con số tổng.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✏️ EDIT HERE — CASE 03 -->
+<!-- CASE 03 — PURA D'OR -->
+  <section class="case">
+    <div class="wrap">
+      <div class="case-head">
+        <div class="eyebrow">dự án 03</div>
+        <h2>Xây dựng hoạt động thành viên từ dữ liệu bán hàng</h2>
+        <div class="meta">Pura D'or Vietnam · Chăm sóc Khách hàng &amp; Gắn kết Khách hàng · 2025–2026</div>
+      </div>
+
+      <div class="body-text">
+        <p>Thương hiệu chưa có hệ thống CRM tự động, nhưng vẫn cần một cách giữ chân nhóm khách hàng mua lặp lại — dựa trên dữ liệu bán hàng sẵn có, quan sát thủ công và mục tiêu kinh doanh từng giai đoạn, trên Shopee, TikTok Shop, Lazada, Fanpage, Zalo OA và nhóm khách hàng thân thiết.</p>
+      </div>
+
+      <table class="seg-table">
+        <tr><th>Nhóm khách</th><th>Đặc điểm</th><th>Cách tiếp cận</th><th>Kênh chính</th></tr>
+        <tr>
+          <td class="group">Mua thường xuyên</td>
+          <td>Mua lặp lại đều, tương tác cao</td>
+          <td>Ưu đãi ưu tiên, tin sớm về sản phẩm mới</td>
+          <td>Group thân thiết, Zalo OA</td>
+        </tr>
+        <tr>
+          <td class="group">Lâu chưa quay lại</td>
+          <td>Từng mua, im lặng thời gian dài</td>
+          <td>Nội dung nhắc nhẹ, ưu đãi kích hoạt lại</td>
+          <td>Fanpage, nhắn cá nhân</td>
+        </tr>
+        <tr>
+          <td class="group">Khách mới</td>
+          <td>Vừa phát sinh đơn đầu tiên</td>
+          <td>Nội dung làm quen thương hiệu, hướng dẫn chọn size</td>
+          <td>TMĐT, Fanpage</td>
+        </tr>
+      </table>
+
+      <div class="body-text">
+        <p>Vì chưa có hệ thống theo dõi tự động, kết quả dưới đây đến từ quan sát và ghi nhận thủ công trong quá trình vận hành:</p>
+        <ul>
+          <li>Nhóm khách trong group thân thiết phản hồi nhanh hơn và mua lại đều đặn hơn nhóm khách thường.</li>
+          <li>Phân nhóm trước khi gửi ưu đãi giúp nội dung phù hợp hơn, giảm cảm giác "spam" từ phía khách hàng.</li>
+          <li>Một số khách chủ động nhắn hỏi ưu đãi kỳ tiếp theo — dấu hiệu chương trình tạo được kỳ vọng quay lại.</li>
+        </ul>
+      </div>
+
+      <div class="insight-box">
+        <span class="lab">bài học</span>
+        <p>Một chương trình thành viên không bắt đầu từ công cụ, mà từ việc hiểu đúng ai là khách hàng lặp lại và họ cần gì. Công cụ chỉ giúp làm việc đó nhanh và đều hơn — tư duy phân nhóm mới là phần quyết định hiệu quả.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✏️ EDIT HERE — CASE 04 -->
+<!-- CASE 04 — MIALALA (MINH HỌA) -->
+  <section class="case band">
+    <div class="wrap">
+      <div class="case-head">
+        <div class="eyebrow">dự án 04 · dự án minh họa</div>
+        <h2>Từ phản hồi sau mua đến đề xuất CX &amp; CRM</h2>
+        <div class="meta">Mialala — nội y &amp; đồ ngủ thiết kế · Dự án cá nhân, thực hiện độc lập khi ứng tuyển vị trí CX &amp; CRM Executive · 2026</div>
+      </div>
+
+      <div class="body-text">
+        <p><i>Toàn bộ số liệu trong dự án này là giả định</i>, do Mai tự dựng để minh họa cách tiếp cận — không phải dữ liệu nội bộ thực tế của Mialala. Phần chính sách khách hàng thân thiết (hiệu lực 01/07/2026) là thông tin công khai của thương hiệu; riêng mốc chi tiêu theo từng hạng là giả định vì không truy cập được số liệu chi tiết.</p>
+      </div>
+
+      <div class="flow">
+        <div class="step"><span class="lab">Vấn đề</span><p>Mialala đang mở rộng nhanh (60+ cơ sở) — cần chuẩn hóa cách đọc phản hồi sau mua để tìm điểm nghẽn trải nghiệm, thay vì xử lý từng trường hợp rời rạc.</p></div>
+        <div class="arrow">→</div>
+        <div class="step"><span class="lab">Phân tích</span><p>Giả định tập dữ liệu 850 phản hồi trong 6 tháng từ cửa hàng, hotline, social và website; phân loại 245 phản hồi 1–2 sao theo nhóm nguyên nhân.</p></div>
+        <div class="arrow">→</div>
+        <div class="step"><span class="lab">Phát hiện</span><p>Sản phẩm và giao hàng chiếm hơn 60% complaint; complaint tăng vọt đúng đợt sale tháng 6 — dấu hiệu quá tải vận hành, chưa phải vấn đề hệ thống.</p></div>
+        <div class="arrow">→</div>
+        <div class="step"><span class="lab">Hành động</span><p>Đề xuất xử lý theo impact/effort, và 3 ý tưởng nâng chương trình thành viên từ "thưởng thụ động" sang "chăm sóc chủ động".</p></div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat"><span class="n">850</span><span class="l">phản hồi thu thập (giả định), 6 tháng</span></div>
+        <div class="stat"><span class="n">245</span><span class="l">phản hồi 1–2★ &amp; complaint cần phân loại</span></div>
+        <div class="stat"><span class="n">4,2/5</span><span class="l">điểm đánh giá trung bình</span></div>
+        <div class="stat"><span class="n">71%</span><span class="l">phản hồi được phản hồi lại trong 48 giờ</span></div>
+      </div>
+
+      <div class="chart">
+        <div class="group-title">Phân bố đánh giá theo số sao</div>
+        <div class="bar-row"><div class="b-label">5 sao</div><div class="bar-track"><div class="bar-fill sage" style="width:58%"></div></div><div class="b-val">58%</div></div>
+        <div class="bar-row"><div class="b-label">4 sao</div><div class="bar-track"><div class="bar-fill sage" style="width:19%"></div></div><div class="b-val">19%</div></div>
+        <div class="bar-row"><div class="b-label">3 sao</div><div class="bar-track"><div class="bar-fill sage" style="width:9%"></div></div><div class="b-val">9%</div></div>
+        <div class="bar-row"><div class="b-label">2 sao</div><div class="bar-track"><div class="bar-fill rose" style="width:7%"></div></div><div class="b-val">7%</div></div>
+        <div class="bar-row"><div class="b-label">1 sao</div><div class="bar-track"><div class="bar-fill rose" style="width:7%"></div></div><div class="b-val">7%</div></div>
+
+        <div class="group-title">245 phản hồi tiêu cực, theo nhóm nguyên nhân</div>
+        <div class="bar-row"><div class="b-label">Sản phẩm (form, chất liệu)</div><div class="bar-track"><div class="bar-fill rose" style="width:34%"></div></div><div class="b-val">34%</div></div>
+        <div class="bar-row"><div class="b-label">Giao hàng (trễ, sai size)</div><div class="bar-track"><div class="bar-fill rose" style="width:27%"></div></div><div class="b-val">27%</div></div>
+        <div class="bar-row"><div class="b-label">Dịch vụ CSKH</div><div class="bar-track"><div class="bar-fill rose" style="width:21%"></div></div><div class="b-val">21%</div></div>
+        <div class="bar-row"><div class="b-label">Đổi trả (quy trình chậm)</div><div class="bar-track"><div class="bar-fill rose" style="width:13%"></div></div><div class="b-val">13%</div></div>
+        <div class="bar-row"><div class="b-label">Khác</div><div class="bar-track"><div class="bar-fill rose" style="width:5%"></div></div><div class="b-val">5%</div></div>
+
+        <div class="group-title">Tỷ lệ mua lại theo hạng thành viên</div>
+        <div class="bar-row"><div class="b-label">Thành viên</div><div class="bar-track"><div class="bar-fill sage" style="width:18%"></div></div><div class="b-val">18%</div></div>
+        <div class="bar-row"><div class="b-label">Bạc</div><div class="bar-track"><div class="bar-fill sage" style="width:32%"></div></div><div class="b-val">32%</div></div>
+        <div class="bar-row"><div class="b-label">Vàng</div><div class="bar-track"><div class="bar-fill sage" style="width:48%"></div></div><div class="b-val">48%</div></div>
+        <div class="bar-row"><div class="b-label">Kim Cương</div><div class="bar-track"><div class="bar-fill sage" style="width:65%"></div></div><div class="b-val">65%</div></div>
+        <div class="chart-note">Complaint tăng +72% trong tháng 6/2026 so với tháng 4 — trùng đợt sale lớn, khi đơn hàng tăng nhanh hơn năng lực xử lý giao hàng &amp; CSKH.</div>
+      </div>
+
+      <table class="seg-table">
+        <tr><th>Giai đoạn hành trình</th><th>Điểm nghẽn (từ phản hồi)</th><th>Đề xuất xử lý ưu tiên</th></tr>
+        <tr>
+          <td class="group">Mua hàng</td>
+          <td>Tư vấn size qua chat/hotline chưa nhất quán giữa nhân viên</td>
+          <td>Bộ size-guide chuẩn hóa + script tư vấn dùng chung <i>(impact cao, effort thấp)</i></td>
+        </tr>
+        <tr>
+          <td class="group">Sử dụng</td>
+          <td>Sản phẩm nhận được không vừa như kỳ vọng (form, chất liệu)</td>
+          <td>Đối chiếu feedback với bộ phận sản phẩm theo từng dòng hàng <i>(impact cao, effort trung bình)</i></td>
+        </tr>
+        <tr>
+          <td class="group">Sử dụng</td>
+          <td>Giao hàng trễ &amp; sai size tập trung vào đợt sale</td>
+          <td>Dự báo tải đơn theo campaign, đặt ngưỡng cảnh báo sớm với đối tác vận chuyển <i>(impact cao, effort trung bình)</i></td>
+        </tr>
+        <tr>
+          <td class="group">Quay lại</td>
+          <td>Chưa có nhắc nhở/ưu đãi cá nhân hóa đúng thời điểm</td>
+          <td>Trigger CRM tự động trước khi khách sắp rớt hạng, thay vì chờ khách im lặng <i>(impact cao, effort trung bình)</i></td>
+        </tr>
+      </table>
+
+      <div class="body-text">
+        <p>Chính sách khách hàng thân thiết hiện tại của Mialala thưởng tốt cho khách chi tiêu nhiều, nhưng còn thiên về "phần thưởng thụ động". Ba ý tưởng đề xuất bổ sung, theo hướng chủ động hơn:</p>
+        <ul>
+          <li><b>Trigger giữ hạng chủ động</b> — gửi ưu đãi trước khi khách sắp rớt hạng do không phát sinh mua trong một khoảng thời gian, thay vì để khách rớt hạng trong im lặng.</li>
+          <li><b>"Lala Anniversary"</b> — ưu đãi kỷ niệm ngày mua hàng đầu tiên, thêm một điểm chạm cảm xúc cá nhân hóa ngoài dịp sinh nhật.</li>
+          <li><b>Early access theo hạng</b> — cho hạng Vàng/Kim Cương xem và đặt trước bộ sưu tập mới trước khi ra mắt công khai.</li>
+        </ul>
+      </div>
+
+      <div class="insight-box">
+        <span class="lab">bài học</span>
+        <p>Ngay cả khi không có quyền truy cập dữ liệu nội bộ, việc đọc phản hồi khách hàng theo đúng cấu trúc hành trình — thay vì đọc rời rạc từng complaint — vẫn có thể chuyển hóa thành đề xuất hành động cụ thể. Đây cũng là cách tiếp cận Mai muốn mang vào vị trí CX &amp; CRM Executive tại Mialala.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✏️ EDIT HERE — LIFECYCLE -->
+<!-- CRM THINKING / LIFECYCLE -->
+  <section class="lifecycle band">
+    <div class="wrap">
+      <div class="lc-title">
+        <div class="eyebrow">cách tiếp cận</div>
+        <h2>Nhìn ba dự án như một vòng đời khách hàng</h2>
+        <p>Ba dự án trên không tách rời — mỗi dự án chạm vào một giai đoạn khác nhau trong vòng đời khách hàng.</p>
+      </div>
+
+      <div class="lc-flow">
+        <div class="lc-node"><div class="stage">Acquire</div><span class="tag">Pura D'or</span></div>
+        <div class="lc-arrow">→</div>
+        <div class="lc-node"><div class="stage">First Purchase</div><span class="tag">Pura D'or</span></div>
+        <div class="lc-arrow">→</div>
+        <div class="lc-node"><div class="stage">Activate</div><span class="tag">PHS</span></div>
+        <div class="lc-arrow">→</div>
+        <div class="lc-node"><div class="stage">Repeat Purchase</div><span class="tag">Pura D'or</span></div>
+        <div class="lc-arrow">→</div>
+        <div class="lc-node"><div class="stage">Retain</div><span class="tag">VICMIS</span></div>
+        <div class="lc-arrow">→</div>
+        <div class="lc-node"><div class="stage">Lapse</div><span class="tag">Pura D'or</span></div>
+        <div class="lc-arrow">→</div>
+        <div class="lc-node"><div class="stage">Reactivate</div><span class="tag">Pura D'or</span></div>
+      </div>
+
+      <div class="lc-note">
+        <p><b>Acquire → First Purchase:</b> ở Pura D'or, nội dung làm quen thương hiệu và hướng dẫn chọn size cho nhóm khách mới trên TMĐT, Fanpage.</p>
+        <p><b>Activate:</b> ở PHS, giai đoạn khách hàng tự phục vụ qua chatbot — nơi một trải nghiệm mượt hay vấp ngay từ đầu quyết định khách có quay lại hay không.</p>
+        <p><b>Retain:</b> ở VICMIS, thể hiện qua KPI gia hạn ổn định và danh hiệu Renewal Champion — giữ khách hàng gắn bó qua quản lý tài khoản sát sao.</p>
+        <p><b>Lapse → Reactivate:</b> ở Pura D'or, nhóm "lâu chưa quay lại" được tiếp cận bằng nội dung nhắc nhẹ và ưu đãi kích hoạt lại, thay vì bỏ qua.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✏️ EDIT HERE — SKILLS & TOOLS -->
+<!-- CAPABILITY -->
+  <section class="capability">
+    <div class="wrap">
+      <div class="lc-title">
+        <div class="eyebrow">năng lực</div>
+        <h2>Những gì mang theo vào một vai trò CRM</h2>
+      </div>
+
+      <div class="cap-grid">
+        <div class="cap-card">
+          <h3>Customer Insight</h3>
+          <ul>
+            <li>Phân tích hành trình khách hàng &amp; điểm chạm</li>
+            <li>Quản lý phản hồi &amp; khiếu nại khách hàng</li>
+            <li>Xác định điểm nghẽn trong trải nghiệm / quy trình</li>
+          </ul>
+        </div>
+        <div class="cap-card">
+          <h3>CRM &amp; Lifecycle</h3>
+          <ul>
+            <li>Thiết kế chương trình thành viên, khách hàng thân thiết</li>
+            <li>Phân khúc khách hàng theo hành vi mua</li>
+            <li>Gắn kết khách hàng &amp; duy trì khách hàng</li>
+          </ul>
+        </div>
+        <div class="cap-card">
+          <h3>Data &amp; Analytics</h3>
+          <ul>
+            <li>Excel: xử lý dữ liệu, pivot, dashboard cơ bản</li>
+            <li>Power BI: báo cáo trực quan</li>
+            <li>Chuẩn hóa dữ liệu vận hành thành báo cáo phục vụ ra quyết định</li>
+          </ul>
+        </div>
+        <div class="cap-card">
+          <h3>Cross-functional Operations</h3>
+          <ul>
+            <li>Quản lý &amp; đào tạo đội CSKH 4–6 người</li>
+            <li>Điều phối liên phòng ban, làm việc với dữ liệu từ nhiều nguồn</li>
+            <li>Quản lý đa kênh: TMĐT, mạng xã hội, Zalo OA, hotline</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tools">
+        <h3>Công cụ</h3>
+        <div class="tool-tags">
+          <span class="tool-tag">Excel / Microsoft Office</span>
+          <span class="tool-tag">Power BI</span>
+          <span class="tool-tag">PowerPoint</span>
+          <span class="tool-tag">CRM &amp; quản lý dữ liệu khách hàng</span>
+          <span class="tool-tag">KPI &amp; báo cáo</span>
+          <span class="tool-tag">Canva / CapCut</span>
+          <span class="tool-tag learning">SQL — đang học</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✏️ EDIT HERE — CLOSING -->
+<!-- CLOSING -->
+  <section class="closing band">
+    <div class="wrap">
+      <div class="eyebrow">định hướng</div>
+      <h2>Muốn phát triển sâu hơn ở phần triển khai CRM có hệ thống — nơi những gì từng tự làm thủ công có thể được nhân rộng bài bản hơn.</h2>
+      <p>Định hướng phát triển sự nghiệp lâu dài trong lĩnh vực Trải nghiệm Khách hàng, CRM và quản lý vòng đời khách hàng, tập trung vào khai thác insight dựa trên dữ liệu, tăng cường gắn kết khách hàng và cải tiến CX thông qua phối hợp liên phòng ban.</p>
+      <div class="sign">Đỗ Thị Như Mai</div>
+    </div>
+  </section>
+
+  <footer>
+    Cử nhân Tài chính – Ngân hàng, Đại học Ngân hàng TP. Hồ Chí Minh (HUB), 2017–2022
+  </footer>
+
+</main>
+<div class="edit-helper">✏️ Easy Edit <small>· Ctrl + F để tìm</small></div>
+
+<script>
+// Chuyển tab cho khối "Evidence Hub" (Case 01) — chỉ dùng khi tab đó KHÔNG có link ra site ngoài.
+function evShowTab(btn, panelId){
+  var nav = btn.closest('.evidence-nav');
+  nav.querySelectorAll('.ev-tab').forEach(function(b){ b.classList.remove('is-active'); });
+  btn.classList.add('is-active');
+  var block = btn.closest('.evidence-block');
+  block.querySelectorAll('.evidence-panel').forEach(function(p){ p.classList.remove('is-active'); });
+  document.getElementById(panelId).classList.add('is-active');
+  return false; // chặn nhảy trang khi tab đang ở chế độ chuyển nội dung tại chỗ
+}
+</script>
+</body>
+</html>
